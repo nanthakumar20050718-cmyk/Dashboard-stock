@@ -7,9 +7,9 @@
     <title>Dashoboard-stock</title>
 </head>
 <body>
-   <!-- ====start header=== -->
-    <header>
-    </div>
+    <!-- ====start header=== -->
+    
+    <header class="wrapper">
     <nav>
         <h1>Romer</h1>
         <ul>
@@ -27,9 +27,63 @@
     </nav>
     </header>
     <!-- ===end header=== -->
+     <!-- ===start main=== -->
+  <main class="wrapper">
+        <section class="hero-content">
+            <h1>The command dashboard for focused</h1>
+            <h1>teams</h1>
+            <p>Executive business operations designed for absolute control and clarity. See sinls,</p>
+            <p>share decisions, and maintain the operating rhythm.</p>
+            <div class="box">
+                <button>Deploy command center</button>
+                <button>View Platform Architecture</button>
+            </div>
+        </section>
+        <div class="hero-stock">
+            <div class="hero-stock-1">
+                <div class="stock box">core.signal_processing</div>
+                <div class="stock-1 box">ACTV // 0.0024s</div>
+                <div class="stock-2 box">LAT: 51.5074 N&nbsp;&nbsp;&nbsp;LON: 0.1278 W</div>
+            </div>
+
+            <div class="hero-dashboard">
+                <div class="signal-panel">
+                    <div class="signal-head">
+                        <span class="panel-label">Live telemetry</span>
+                        <span class="signal-status"><span id="signalStatus">+0.08</span></span>
+                    </div>
+                    <canvas id="signalCanvas" width="560" height="220"></canvas>
+                    <div class="signal-foot">
+                        <span>Packet flow <strong id="packetFlow">84%</strong></span>
+                        <span>Latency <strong id="latencyValue">22 ms</strong></span>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-label">Node consistency</span>
+                        <strong id="consistencyValue">99.98%</strong>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Throughput meter</span>
+                        <div class="meter">
+                            <div id="meterFill" class="meter-fill"></div>
+                        </div>
+                        <strong id="meterValue">67%</strong>
+                    </div>
+                    <div class="stat-card full">
+                        <span class="stat-label">Ops log stream</span>
+                        <ul id="logList" class="log-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </main>
+     <!-- ===end main=== -->
+
 
     <!-- ===start footer=== -->
-     <footer>
+     <footer class="wrapper">
         <div class="row">
         <div class="color-1">
         <h2>Romer</h2>
@@ -57,4 +111,7 @@
         </div>
         </div>
      </footer>
+     <script src="app.js"></script>
+</body>
+</html>
 
